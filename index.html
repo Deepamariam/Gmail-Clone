@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gmail Clone</title>
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="./assets/scripts/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container" id="header">
+            <div class="bar" onclick="changeNavMenuClass(true)" id="button">
+                <i class="fa fa-bars"></i>
+
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search in emails"> </div>
+            <div class="user" onclick="displayPopup(true)"> <img class="user-image" src="./assets/images/agnes.jpg">
+            </div>
+        </div>
+
+        <div class="body-container">
+            <div class="sidebar-container" id="display-sidebar">
+
+                <div class="heading" onclick="changeNavMenuClass(false)"> Gmail </div>
+                <hr>
+
+                <div class="inboxes">
+                    <div class="inbox-item1"> <i class="fa fa-inbox"></i></div>
+                    <div class="inbox-item2"> All inboxes</div>
+                </div>
+
+                <hr>
+
+                <div class="primary">
+                    <div class="primary-item1"> <i class="fa fa-star"></i> </div>
+                    <div class="primary-item2"> Primary </div>
+                </div>
+                <div class="social">
+                    <div class="social-item1"> <i class="fa fa-users"></i></div>
+                    <div class="social-item2"> Social </div>
+                </div>
+                <div class="promotions">
+                    <div class="promotions-item1"> <i class="fa fa-tag"></i></div>
+                    <div class="promotions-item2"> Promotions </div>
+                </div>
+                <div class="updates">
+                    <div class="updates-item1"> <i class="fa fa-info-circle"></i> </div>
+                    <div class="updates-item2"> Updates </div>
+                </div>
+                <div class="forums">
+                    <div class="forums-item1"> <i class="fa fa-comments"></i> </div>
+                    <div class="forums-item2"> Forums </div>
+                </div>
+            </div>
+
+
+
+            <div class="inbox-container" id="container-inbox">
+                <div class="inbox-container-header"> INBOX </div>
+                <div class="inbox-container-content">
+                    <div class="inbox-content-email1">
+                        <div class="inbox-email1-icon1"> <img class="inbox-icon1" src="./assets/images/emailicon.jpg">
+                        </div>
+                        <div class="inbox-email1-text1">
+                            <div class="inbox-text1-heading">
+                                <div class="inbox-text1-head1"> Coursera</div>
+                                <div class="inbox-text1-date1"> 27 July </div>
+                            </div>
+                            <div class="inbox-text1-subject1"> Welcome! </div>
+                            <div class="inbox-text1-detail1">
+                                <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn
+                                    something new...</div>
+                                <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="inbox-content-email1">
+                        <div class="inbox-email1-icon1"> <img class="inbox-icon1" src="./assets/images/emailicon.jpg"></div>
+                        <div class="inbox-email1-text1">
+                            <div class="inbox-text1-heading">
+                                <div class="inbox-text1-head1"> Coursera</div>
+                                <div class="inbox-text1-date1"> 27 July </div>
+                            </div>
+                            <div class="inbox-text1-subject1"> Welcome! </div>
+                            <div class="inbox-text1-detail1">
+                                <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn something new...</div>
+                                <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="inbox-content-email1">
+                        <div class="inbox-email1-icon1"> <img class="inbox-icon1" src="./assets/images/emailicon.jpg">
+                        </div>
+                        <div class="inbox-email1-text1">
+                            <div class="inbox-text1-heading">
+                                <div class="inbox-text1-head1"> Coursera</div>
+                                <div class="inbox-text1-date1"> 27 July </div>
+                            </div>
+                            <div class="inbox-text1-subject1"> Welcome! </div>
+                            <div class="inbox-text1-detail1">
+                                <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn
+                                    something new...</div>
+                                <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <div class="popup-container hide-div" id="popup-display">
+
+            <div class="popup-container-header">
+                <div class="popup-close-button" onclick="displayPopup(false)"> <i class="fa fa-times"></i> </div>
+                <div class="popup-header-text"> Google </div>
+            </div>
+
+            <div class="popup-container-email">
+                <div class="emailicon"> <img class="popup-profile-icon" src="./assets/images/agnes.jpg"></div>
+                <div class="email-text">
+                    <div class="email-text-name"> Deepa Mariam George</div>
+                    <div class="email-text-address"> deepa@gmail.com </div>
+                </div>
+            </div>
+
+            <div class="popup-container-button"> <button> Manage your Google Account</button> </div>
+
+
+            <div class="popup-addaccount">
+                <div class="addaccount-icon1"> <i class="fa fa-user-plus"></i> </div>
+                <div class="addaccount-text"> Add another account</div>
+            </div>
+
+            <div class="popup-manageaccount">
+                <div class="manageaccount-icon2"> <i class="fa fa-cog"></i> </div>
+                <div class="manageaccount-text"> Manage accounts on this device</div>
+            </div>
+
+
+
+            <div class="popup-footer">
+                <div class="footer-text1"> Privacy Policy </div>
+                <div class="footer-separator"> . </div>
+                <div class="footer-text2"> Terms of Service</div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
