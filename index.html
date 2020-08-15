@@ -14,123 +14,207 @@
 
 <body>
     <div class="container">
-        <div class="header-container" id="header">
-            <div class="bar" onclick="changeNavMenuClass(true)" id="button">
-                <i class="fa fa-bars"></i>
+        <div class="hiding-container" id="displayEmail">
+            <div class="header-container" id="header">
+                <div class="bar" onclick="changeNavMenuClass(true)" id="button">
+                    <i class="fa fa-bars"></i>
 
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="Search in emails"> </div>
+                <div class="user" onclick="displayPopup(true)"> <img class="user-image" src="./assets/images/agnes.jpg">
+                </div>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Search in emails"> </div>
-            <div class="user" onclick="displayPopup(true)"> <img class="user-image" src="./assets/images/agnes.jpg">
+
+            <div class="body-container">
+                <div class="sidebar-container" id="display-sidebar">
+
+                    <div class="heading" onclick="changeNavMenuClass(false)"> Gmail </div>
+                    <hr>
+
+                    <div class="inboxes">
+                        <div class="inbox-item1"> <i class="fa fa-inbox"></i></div>
+                        <div class="inbox-item2"> All inboxes</div>
+                    </div>
+
+                    <hr>
+
+                    <div class="primary">
+                        <div class="primary-item1"> <i class="fa fa-star"></i> </div>
+                        <div class="primary-item2"> Primary </div>
+                    </div>
+                    <div class="social">
+                        <div class="social-item1"> <i class="fa fa-users"></i></div>
+                        <div class="social-item2"> Social </div>
+                    </div>
+                    <div class="promotions">
+                        <div class="promotions-item1"> <i class="fa fa-tag"></i></div>
+                        <div class="promotions-item2"> Promotions </div>
+                    </div>
+                    <div class="updates">
+                        <div class="updates-item1"> <i class="fa fa-info-circle"></i> </div>
+                        <div class="updates-item2"> Updates </div>
+                    </div>
+                    <div class="forums">
+                        <div class="forums-item1"> <i class="fa fa-comments"></i> </div>
+                        <div class="forums-item2"> Forums </div>
+                    </div>
+                </div>
+
+
+
+                <div class="inbox-container" id="container-inbox">
+                    <div class="inbox-container-header"> INBOX </div>
+                    <div class="inbox-container-content">
+                        <div class="inbox-content-email1" onclick="hidingInbox(true)">
+                            <div class="inbox-email1-icon1"> <img class="inbox-icon1"
+                                    src="./assets/images/emailicon.jpg">
+                            </div>
+                            <div class="inbox-email1-text1">
+                                <div class="inbox-text1-heading">
+                                    <div class="inbox-text1-head1"> Cyber Security</div>
+                                    <div class="inbox-text1-date1"> 27 July </div>
+                                </div>
+                                <div class="inbox-text1-subject1"> Welcome! </div>
+                                <div class="inbox-text1-detail1">
+                                    <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn
+                                        something new...</div>
+                                    <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="inbox-content-email1" onclick="hidingInbox(true)">
+                            <div class="inbox-email1-icon1"> <img class="inbox-icon1"
+                                    src="./assets/images/emailicon.jpg">
+                            </div>
+                            <div class="inbox-email1-text1">
+                                <div class="inbox-text1-heading">
+                                    <div class="inbox-text1-head1"> Cyber Security</div>
+                                    <div class="inbox-text1-date1"> 27 July </div>
+                                </div>
+                                <div class="inbox-text1-subject1"> Welcome! </div>
+                                <div class="inbox-text1-detail1">
+                                    <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn
+                                        something new...</div>
+                                    <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="inbox-content-email1" onclick="hidingInbox(true)">
+                            <div class="inbox-email1-icon1"> <img class="inbox-icon1"
+                                    src="./assets/images/emailicon.jpg">
+                            </div>
+                            <div class="inbox-email1-text1">
+                                <div class="inbox-text1-heading">
+                                    <div class="inbox-text1-head1"> Cyber Security</div>
+                                    <div class="inbox-text1-date1"> 27 July </div>
+                                </div>
+                                <div class="inbox-text1-subject1"> Welcome! </div>
+                                <div class="inbox-text1-detail1">
+                                    <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn
+                                        something new...</div>
+                                    <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
             </div>
         </div>
 
-        <div class="body-container">
-            <div class="sidebar-container" id="display-sidebar">
 
-                <div class="heading" onclick="changeNavMenuClass(false)"> Gmail </div>
-                <hr>
-
-                <div class="inboxes">
-                    <div class="inbox-item1"> <i class="fa fa-inbox"></i></div>
-                    <div class="inbox-item2"> All inboxes</div>
+        <div class="description-container hiding-description-container" id="openingEmail">
+            <div class="description-header">
+                <div class="description-header-left">
+                    <div class="header-left-item1" onclick="hidingInbox(false)"> <i class="fa fa-arrow-left"></i> </div>
                 </div>
-
-                <hr>
-
-                <div class="primary">
-                    <div class="primary-item1"> <i class="fa fa-star"></i> </div>
-                    <div class="primary-item2"> Primary </div>
-                </div>
-                <div class="social">
-                    <div class="social-item1"> <i class="fa fa-users"></i></div>
-                    <div class="social-item2"> Social </div>
-                </div>
-                <div class="promotions">
-                    <div class="promotions-item1"> <i class="fa fa-tag"></i></div>
-                    <div class="promotions-item2"> Promotions </div>
-                </div>
-                <div class="updates">
-                    <div class="updates-item1"> <i class="fa fa-info-circle"></i> </div>
-                    <div class="updates-item2"> Updates </div>
-                </div>
-                <div class="forums">
-                    <div class="forums-item1"> <i class="fa fa-comments"></i> </div>
-                    <div class="forums-item2"> Forums </div>
+                <div class="description-header-right">
+                    <div class="header-right-item2"> <i class="fa fa-envelope-open"></i> </div>
+                    <div class="header-right-item3"> <i class="fa fa-trash"></i> </div>
+                    <div class="header-right-item4"> <i class="fa fa-envelope"></i> </div>
+                    <div class="header-right-item5"> <i class="fa fa-ellipsis-v"></i> </div>
                 </div>
             </div>
 
 
-
-            <div class="inbox-container" id="container-inbox">
-                <div class="inbox-container-header"> INBOX </div>
-                <div class="inbox-container-content">
-                    <div class="inbox-content-email1">
-                        <div class="inbox-email1-icon1"> <img class="inbox-icon1" src="./assets/images/emailicon.jpg">
-                        </div>
-                        <div class="inbox-email1-text1">
-                            <div class="inbox-text1-heading">
-                                <div class="inbox-text1-head1"> Coursera</div>
-                                <div class="inbox-text1-date1"> 27 July </div>
-                            </div>
-                            <div class="inbox-text1-subject1"> Welcome! </div>
-                            <div class="inbox-text1-detail1">
-                                <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn
-                                    something new...</div>
-                                <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
-                            </div>
-                        </div>
-
-
+            <div class="description-subject">
+                <div class="description-subject-left">
+                    <div class="subject-left-item1"> Early Bird Scholarship available for the Cyber Security Program
+                        Cohort 2
+                        <!-- <div class="subject-left-item2"> <button class="description-subject-inbox"> Inbox </button></div>  -->
                     </div>
-
-
-                    <div class="inbox-content-email1">
-                        <div class="inbox-email1-icon1"> <img class="inbox-icon1" src="./assets/images/emailicon.jpg"></div>
-                        <div class="inbox-email1-text1">
-                            <div class="inbox-text1-heading">
-                                <div class="inbox-text1-head1"> Coursera</div>
-                                <div class="inbox-text1-date1"> 27 July </div>
-                            </div>
-                            <div class="inbox-text1-subject1"> Welcome! </div>
-                            <div class="inbox-text1-detail1">
-                                <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn something new...</div>
-                                <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="inbox-content-email1">
-                        <div class="inbox-email1-icon1"> <img class="inbox-icon1" src="./assets/images/emailicon.jpg">
-                        </div>
-                        <div class="inbox-email1-text1">
-                            <div class="inbox-text1-heading">
-                                <div class="inbox-text1-head1"> Coursera</div>
-                                <div class="inbox-text1-date1"> 27 July </div>
-                            </div>
-                            <div class="inbox-text1-subject1"> Welcome! </div>
-                            <div class="inbox-text1-detail1">
-                                <div class="inbox-text1-detail1-item1"> Hello Deepa Mariam George. Ready to learn
-                                    something new...</div>
-                                <div class="inbox-text1-detail1-item2"> <i class="fa fa-star"></i></div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
                 </div>
 
+                <div class="description-subject-right">
+                    <div class="subject-right-item2"> <i class="fa fa-star"></i> </div>
+                </div>
 
 
             </div>
 
+            <div class="description-mail-sender">
+                <div class="mail-sender-image"> <img class="description-sender-image"
+                        src="./assets/images/emailicon.jpg"></div>
+                <div class="mail-sender-detail">
+                    <div class="mail-sender-name-date">
+                        <div class="mail-sender-name"> Cyber Security </div>
+                        <div class="mail-sender-date"> 27 July </div>
+                    </div>
+                    <div class="mail-sender-to"> to me <i class="fa fa-angle-down"></i> </div>
+                </div>
+                <div class="mail-sender-icons">
+                    <div class="mail-sender-icon1"> <i class="fa fa-reply"></i> </div>
+                    <div class="mail-sender-icon2"> <i class="fa fa-ellipsis-v"></i> </div>
+                </div>
 
+            </div>
+
+            <div class="description-body-content">
+                <div class="description-body-text">
+                    Welcome, Deepa Mariam George! <br> <br> Welcome to Cyber Security Program. We're glad you're here.
+                    Start learning today by watching your first video.
+                </div>
+
+                <div class="description-body-image"> <img class="description-body-image-item"
+                        src="./assets/images/Cybersecurity.jpg"></div>
+            </div>
+
+            <div class="description-footer">
+                <div class="description-footer-reply">
+                    <div class="reply-icon"> <i class="fa fa-reply"></i></div>
+                    <div class="reply-text"> Reply </div>
+                </div>
+
+                <div class="description-footer-replyall">
+                    <div class="replyall-icon"> <i class="fa fa-reply-all"></i></div>
+                    <div class="replyall-text"> Reply all</div>
+                </div>
+
+                <div class="description-footer-forward">
+                    <div class="forward-icon"> <i class="fa fa-share"></i></div>
+                    <div class="forward-text"> Forward </div>
+                </div>
+            </div>
 
         </div>
+
         <div class="popup-container hide-div" id="popup-display">
 
             <div class="popup-container-header">
@@ -170,7 +254,7 @@
 
         </div>
 
-    </div>
+
 </body>
 
 </html>

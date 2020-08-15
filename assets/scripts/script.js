@@ -45,5 +45,20 @@ function displayPopup(value){
     }
 }
 
+function hidingInbox(input){
+    let object = document.getElementById("displayEmail");
+    let token = document.getElementById("openingEmail");
+
+    if(input){
+        object.style.cssText = "display: none";
+        token.classList.remove("hiding-description-container");
+    }
+
+    else{
+        object.style.cssText = "";
+        token.classList.add("hiding-description-container");
+    }
+}
+
 
 

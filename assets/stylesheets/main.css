@@ -11,6 +11,9 @@ body{
     
 }
 
+.hiding-container{
+    
+}
 
 
 .header-container{
@@ -468,3 +471,231 @@ button{
     padding: 0.5%;
     font-size: 11px;
 }
+
+
+
+.description-container{
+
+    width: 92%;
+    
+    padding: 5% 4%;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    cursor: pointer;
+    color: #9A9FA3;
+    font-weight: lighter;
+
+}
+
+.description-header{
+    display: flex;
+    width: 100%;
+}
+
+.description-header-left{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.description-header-right{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.header-left-item1, .header-right-item2, .header-right-item3, .header-right-item4, .header-right-item5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-subject{
+    width: 98%;
+    margin: 4% 0;
+    padding: 1%;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.description-subject-left{
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.description-subject-right{
+    width: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+    color: yellow;
+}
+
+.subject-left-item1{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+.description-subject-inbox{
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.description-mail-sender{
+    display: flex;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mail-sender-image{
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.description-sender-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.mail-sender-detail{
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 2%;
+}
+
+.mail-sender-icons{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mail-sender-name-date{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mail-sender-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2%;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.mail-sender-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.mail-sender-to{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.mail-sender-icon1, .mail-sender-icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.fa-angle-down{
+    
+    padding: 0 2%;
+}
+
+.description-body-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2% 0;
+}
+
+.description-body-text{
+    font-size: 10.5px;
+    width: 98%;
+    padding: 3% 1%;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.description-body-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2% 0;
+}
+
+
+
+.description-body-image-item{
+    width: 85%;
+    height: 100px;
+}
+
+.description-footer{
+    width: 90%;
+    display: flex;
+
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 12px;
+}
+
+.description-footer-reply, .description-footer-replyall, .description-footer-forward{
+    display: flex;
+    width: 22%;
+    border: 1px solid #9A9FA3; 
+    color: #9A9FA3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    padding: 2%;
+}
+
+.reply-icon, .replyall-icon, .forward-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+}
+
+.reply-text, .replyall-icon, .forward-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2%;
+}
+
+.container .hiding-description-container{
+    display: none;
+}
+
