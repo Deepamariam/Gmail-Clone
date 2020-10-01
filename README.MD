@@ -1,1 +1,1 @@
-A clone of gmail mobile application made with HTML, CSS and Javascript.
+A clone of gmail mobile app made with HTML, CSS and Javascript.
